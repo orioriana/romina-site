@@ -5,43 +5,43 @@ const compression = require('compression')
 const fs = require('fs');
 const spdy = require('spdy');
 var serveIndex = require('serve-index'); // For SSL certificate installation
-const key = fs.readFileSync('./ssl/private.key');
-const cert = fs.readFileSync('./ssl/certificate.crt');
-const ca = fs.readFileSync('./ssl/ca_bundle.crt');
-const optionsHttps = {
-    key,
-    cert,
-    ca,
-    spdy: {
-        protocols: [ 'h2', 'spdy/3.1', 'http/1.1' ],
-        plain: false
-    }
-}
+// const key = fs.readFileSync('./ssl/private.key');
+// const cert = fs.readFileSync('./ssl/certificate.crt');
+// const ca = fs.readFileSync('./ssl/ca_bundle.crt');
+// const optionsHttps = {
+//     key,
+//     cert,
+//     ca,
+//     spdy: {
+//         protocols: [ 'h2', 'spdy/3.1', 'http/1.1' ],
+//         plain: false
+//     }
+// }
 const app = express();
 
 const PORT_http = 80; 
-const PORT_https = 443; 
+// const PORT_https = 443; 
 const server_http = http.createServer(app);
-const server_https = spdy.createServer(optionsHttps,app);
+// const server_https = spdy.createServer(optionsHttps,app);
 
 //Gzip compression
 app.use(compression());
 
 //Redirections
 
-function redirect(req, res, next) {
-    if ( req.headers.host.indexOf('www.') > -1 ) { //If there's 'www.'
-        var newHost = req.headers.host.replace('www.','') //Get rid of 'www.'
-        return res.redirect(301, 'https://' + newHost + req.originalUrl); //Deliver https
-    }
-    if (req.protocol === 'http' ) { //If 'http' is requested
-        var newHost = req.headers.host.replace('www.','') //Get rid of 'www.'
-        return res.redirect(301, 'https://' + newHost + req.originalUrl); //Deliver https
-    }
-    next();
-};
-app.set('trust proxy', true);
-app.use(redirect);
+// function redirect(req, res, next) {
+//     if ( req.headers.host.indexOf('www.') > -1 ) { //If there's 'www.'
+//         var newHost = req.headers.host.replace('www.','') //Get rid of 'www.'
+//         return res.redirect(301, 'https://' + newHost + req.originalUrl); //Deliver https
+//     }
+//     if (req.protocol === 'http' ) { //If 'http' is requested
+//         var newHost = req.headers.host.replace('www.','') //Get rid of 'www.'
+//         return res.redirect(301, 'https://' + newHost + req.originalUrl); //Deliver https
+//     }
+//     next();
+// };
+// app.set('trust proxy', true);
+// app.use(redirect);
 
 
 //Serve static
@@ -63,7 +63,7 @@ app.get('/',function(req,res){
 server_http.listen(PORT_http, () => {
     console.log(`Server started at port ${PORT_http}`);
 })
-server_https.listen(PORT_https, () => {
-    console.log(`Secure Server started at port ${PORT_https}`);
-})
+// server_https.listen(PORT_https, () => {
+//     console.log(`Secure Server started at port ${PORT_https}`);
+// })
 
