@@ -1,0 +1,141 @@
+body{
+  font-family: 'Source Code Pro', monospace;
+  margin: 0px;
+  color: white;
+  height: 100vh;
+  h3{
+    font-size: 35px;
+    margin: 15px 0 25px 0;
+  }
+  .hero{
+    height: 100%;
+    width: 100vw;
+    background: #1b1b1e;
+    .container{
+      padding: 80px;
+    }
+    .footer{
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
+      background: #37373e;
+      padding: 6px 0px;
+      p{
+        font-size: 15px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+}
+h1{
+  font-size: 48px;
+  margin: 0px;
+}
+.menu{
+  font-size: 48px;
+  margin-left: 62px;
+  font-weight: 900;
+  ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    &:hover{
+      color: #3e3e42;
+      transition-duration: 0.5s;
+    }
+    li{
+      padding-bottom: 5px;
+      &:hover{
+        cursor: pointer;
+        color: white !important;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+  &:before{
+    content: '{';
+    margin-left: -32px;
+  }
+  &:after{
+    content: '}';
+    margin-left: -32px;
+  }
+}
+
+.constHide{
+  animation: constHide 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes constHide{
+  from {
+    display: block;
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.menuMove{
+  animation: menuMove 0.5s 0.2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes menuMove{
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-138px);
+  }
+}
+
+.h1Shrink{
+  animation: h1Shrink 0.5s 0.2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes h1Shrink{
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+.menuShrink{
+  animation: menuShrink 0.5s 0.2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes menuShrink{
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+    margin-left: -27px;
+    transform-origin: top left;
+  }
+}
+
+.white{
+  color: white !important;
+}
+
+.grey{
+  color: #3e3e42;
+}
+.green{
+  color: #31f4b8;
+}
+
+.flex{
+  display: flex;
+}
+.align-items-start{
+  align-items: flex-start;
+}
+
+
