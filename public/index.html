@@ -8,72 +8,106 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="/js/main.js" async defer></script>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="hero">
-      <div class="container">
-        <h3 class="grey">// Hi, i'm a frontend developer</h3>
-        <div class="flex align-items-start menu-container">
-          <h1><span id="const">const</span> <span class="green">Romina</span> =</h1>
-          <div class="flex justify-content-between">
-            <div class="menu">
-                <ul>
-                  <li id="about" class="menu-li">about,</li>
-                  <li id="skills" class="menu-li">skills,</li>
-                  <li id="work" class="menu-li">work,</li>
-                  <li id="contact" class="menu-li">contact</li>
-                </ul>
-              </div>
-            <div class="pages">
-              <div id="about-content">
-                <p class="mb-40">Argentinan girl living in Amsterdam. I’m passionate about development and bringing design to life with code. Coming from a Design background I can bridge both philosophies and ways of thinking, developing products that are both technically and UX strong. I'm confident, naturally curious, and I’m always challenging myself and working on improving my skills, one problem at a time.</p>
-                <p>I love dancing, I’ve lived in 4 countries, I prefer cats, I only watched one episode of Game of Thrones, I did figure skating when I was a kid, I play the lottery once a year and strongly think I’m gonna win, and this year I listened to 80,298 minutes of music on Spotify.</p>
-              </div>
-              <div id="skills-content" class="flex flex-column">
-                <h4 class="green bold">Day to day comfort</h4>
-                <div class="flex skills">
+      <div class="flex-column justify-content-between">
+        <div class="container">
+          <h3 class="grey" id="label">// Hi, i'm a frontend developer</h3>
+          <div class="flex align-items-start menu-container">
+            <h1><span id="const">const</span> <span class="green"><span class='letter'>R</span><span class='letter'>o</span><span class='letter'>m</span><span class='letter'>i</span><span class='letter'>n</span><span class='letter'>a</span></span> =</h1>
+            <div class="flex justify-content-between">
+              <div class="menu">
                   <ul>
-                    <li>- CSS/SASS</li>
-                    <li>- Javascript/ES6</li>
-                    <li>- React.js</li>
-                    <li>- Redux</li>
-                    <li>- AJAX</li>
-                    <li>- Version Control (Git)</li>
-                  </ul>
-                  <ul class="ml-45">
-                    <li>- yarn/npm</li>
-                    <li>- jQuery</li>
-                    <li>- Cross-Browser Compatibility</li>
-                    <li>- Layout responsiveness</li>
-                    <li>- Wordpress</li>
-                    <li>- Photoshop/Illustrator/Figma</li>
+                    <li id="about" class="menu-li">about,</li>
+                    <li id="skills" class="menu-li">skills,</li>
+                    <li id="work" class="menu-li">work,</li>
+                    <li id="contact" class="menu-li">contact</li>
                   </ul>
                 </div>
-                <h4 class="green bold">Experience with</h4>
-                <div class="flex skills">
-                  <ul>
-                    <li>- Node.js</li>
-                    <li>- Express</li>
-                    <li>- MongoDB</li>
-                    <li>- React Native</li>
-                    <li>- PHP</li>
-                  </ul>
+              <div class="pages">
+                <div id="about-content">
+                  <p class="mb-40">Argentinan girl living in Amsterdam. I’m passionate about development and bringing design to life with code. Coming from a Design background I can bridge both philosophies and ways of thinking, developing products that are both technically and UX strong. I'm confident, naturally curious, and I’m always challenging myself and working on improving my skills, one problem at a time.</p>
+                  <p>I love dancing, I’ve lived in 4 countries, I prefer cats, I only watched one episode of Game of Thrones, I did figure skating when I was a kid, I play the lottery once a year and strongly think I’m gonna win, and this year I listened to 80,298 minutes of music on Spotify.</p>
                 </div>
-              </div>
-              <div id="work-content">
-                <p class="mb-40">Work...</p>
+                <div id="skills-content" class="flex flex-column">
+                  <h4 class="green bold">Day to day comfort</h4>
+                  <div class="flex skills">
+                    <ul>
+                      <li><span class="green bold">-</span> HTML5/CSS/SASS</li>
+                      <li><span class="green bold">-</span> Javascript/ES6</li>
+                      <li><span class="green bold">-</span> React.js</li>
+                      <li><span class="green bold">-</span> Redux</li>
+                      <li><span class="green bold">-</span> AJAX</li>
+                      <li><span class="green bold">-</span> Version Control (Git)</li>
+                    </ul>
+                    <ul class="ml-45">
+                      <li><span class="green bold">-</span> yarn/npm</li>
+                      <li><span class="green bold">-</span> jQuery</li>
+                      <li><span class="green bold">-</span> Cross-Browser Compatibility</li>
+                      <li><span class="green bold">-</span> Layout responsiveness</li>
+                      <li><span class="green bold">-</span> Wordpress</li>
+                      <li><span class="green bold">-</span> Photoshop/Illustrator/Figma</li>
+                    </ul>
+                  </div>
+                  <h4 class="green bold">Experience with</h4>
+                  <div class="flex skills">
+                    <ul>
+                      <li><span class="green bold">-</span> Node.js</li>
+                      <li><span class="green bold">-</span> Express</li>
+                      <li><span class="green bold">-</span> MongoDB</li>
+                      <li><span class="green bold">-</span> React Native</li>
+                      <li><span class="green bold">-</span> PHP</li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="work-content" class="flex flex-column experience">
+                  <div class="experience-selector flex">
+                    <h4 id="present" class="green bold">Present</h4>
+                    <h4 id="past" class="grey bold ml-45">Past</h4>
+                  </div>
+                  <div class="present-section">
+                    <p class="mb-30">For the last 2 years I’ve had the pleasure of working for Starred, where I’ve been involved in a number of projects:</p>
+                    <ul id='experience-page1'>
+                      <li><span class="green bold">-</span> Working in our Product team building pages, fixing bugs and replacing legacy code in our application. (React.js)</li>
+                      <li><span class="green bold">-</span> Re-writing one of our products (Starred Connect) from Angular to React, making it compatible with the rest of our application. (React.js)</li>
+                      <li><span class="green bold">-</span> Designing, developing and maintaining the Starred website, working with our Marketing team. (Wordpress/PHP/JS/CSS)</li>
+                    </ul>
+                    <ul id='experience-page2'>
+                      <li><span class="green bold">-</span> Setting up our own server and migrating the Starred site outside Wordpress, increasing performance, loading spead, and overall user experience. (Node.js/Express/JS/CSS)</li>
+                      <li class="mb-90"><span class="green bold">-</span> Developing SheetsForRecruiters.com (Node.js/Express/JS/CSS)</li>
+                    </ul>
+                    <p id="next" class="navigation">></p>
+                    <p id="previous" class="navigation"><</p>
+                  </div>
+                  <div class="past-section">
+                    <ul>
+                      <li><span class="green bold">-</span> Re-designing and implementing BedHoliday's site to generate more leads by improving performance and user experience (BedHoliday - 2020/ongoing)</li>
+                      <li><span class="green bold">-</span> Working as a freelancer fixing small bugs and making improvements for websites using a CMS like Wordpress or Squarespace (2017-1019)</li>
+                      <li><span class="green bold">-</span> Managing LeveLUp's main website and designing/creating websites for clients and company projects. (LevelupVentures - 2017/2018)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="contact-content" class="flex-column">
+                  <p class="mb-20">Want to collaborate or just say hi? Contact me through the following!</p>
+                  <div class="flex social-icons">
+                    <a href="mailto:romidgomez@hotmail.com"><img src="/assets/email.svg"/></a>
+                    <a href="https://github.com/romi-dg" target="_blank"><img class="mlr-15" src="/assets/github.svg"/></a>
+                    <a href="https://www.linkedin.com/in/romina-gomez-380319133/" target="_blank"><img src="/assets/linkedin.svg"/></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        <p>Made with <span class="green"><></span> by Romina</p>
-      </div>
+        <div class="footer">
+          <p>Made with <span class="green"><></span> by Romina</p>
+        </div>
     </div>
-    <script src="/js/main.js" async defer></script>
+    </div>
   </body>
 </html>

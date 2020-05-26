@@ -6,13 +6,14 @@
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
+    "node-sass-chokidar": "1.3.4",
     "nodemon": "^2.0.3",
-    "sass-node": "^4.11.2",
     "serve-index": "^1.9.1",
     "spdy": "^4.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-css": "node-sass --watch public/css -o public/css"
-  }
+    "watch-css": "node-sass-chokidar public/css -o public/css --watch --recursive"
+  },
+  "devDependencies": {}
 }

@@ -13,16 +13,14 @@ body{
     margin: 15px 0 25px 0;
   }
   .hero{
-    overflow:hidden;
-    height: 100%;
     width: 100vw;
     background: #1b1b1e;
     display: flex;
+    min-height: 711px;
     .container{
-      padding: 80px;
+      padding: 80px 80px 40px 80px;
     }
     .footer{
-      position: absolute;
       bottom: 0;
       width: 100vw;
       background: #37373e;
@@ -35,13 +33,18 @@ body{
     }
   }
 }
+ul{
+  li{
+    -webkit-font-smoothing: antialiased;
+  }
+}
 h4{
   margin-bottom: 10px;
 }
 h1{
   font-size: 48px;
   margin: 0px;
-  min-width: 263px;
+  min-width: 412px;
   #const{
     display: block;
     position: absolute;
@@ -85,12 +88,18 @@ h1{
   animation: constHide 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 
+.letter{
+  display: inline-block;
+  cursor: default;
+}
+
 @keyframes constHide{
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -118,6 +127,7 @@ h1{
   to {
     transform: scale(0.7);
     transform-origin: top left;
+    min-width: 250px;
   }
 }
 
@@ -144,6 +154,7 @@ h1{
   visibility: hidden;
   width:100px;
   margin-left: 100px;
+  display: none;
 }
 
 ul{
@@ -155,9 +166,54 @@ ul{
   padding-bottom: 12px;
 }
 
+.experience{
+  ul{
+    flex-direction: column;
+    li{
+      padding-bottom: 22px;
+      line-height: 23px;
+      font-size: 15px;
+    }
+  }
+  .navigation{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 0px;
+  }
+  #previous{
+    display: none;
+  }
+}
+#experience-page2{
+  display: none;
+}
+
+#present, #past{
+  &:hover{
+    color: #31f4b8;
+    cursor: pointer;
+  }
+}
+
+.past-section{
+  display: none
+}
 
 .display-content{
-  animation: displayContent 0.5s 0.4s cubic-bezier(0.4, 0.1, 0.7, 0.95) forwards;
+  animation: displayContent 0.5s cubic-bezier(0.4, 0.1, 0.7, 0.95) forwards;
+}
+
+.social-icons{
+  img{
+    width: 30px;
+    top: 0;
+    &:hover{
+      top: -7px;
+      transition: 0.3s cubic-bezier(0, 0, 0.2, 1);
+      position: relative;
+    }
+  }
 }
 
 @keyframes displayContent{
@@ -210,8 +266,25 @@ ul{
   align-items: flex-start;
 }
 
+.mlr-15{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.mb-90{
+  margin-bottom: 50px;
+}
+
 .mb-40{
   margin-bottom: 40px;
+}
+
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
 }
 
 .ml-45{
