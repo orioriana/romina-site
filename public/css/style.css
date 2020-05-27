@@ -232,8 +232,9 @@ ul {
   margin-top: 38px;
   font-size: 34px; }
 
-#label-mob {
-  display: none; }
+#label-mob, .mob-subtitle {
+  display: none;
+  text-align: center; }
 
 @media (max-width: 940px) {
   body .hero .container {
@@ -250,12 +251,12 @@ ul {
     flex-direction: column;
     visibility: visible; }
   body h3 {
-    font-size: 30px;
+    font-size: 24px;
     margin: 15px 0 8px 0; }
   .pages {
     display: flex;
     flex-direction: column; }
-  .mob-title {
+  .mob-title, .mob-subtitle {
     display: block; }
   .skills {
     flex-direction: column; }
