@@ -209,7 +209,7 @@ ul{
     width: 30px;
     top: 0;
     &:hover{
-      top: -7px;
+      top: -4px;
       transition: 0.3s cubic-bezier(0, 0, 0.2, 1);
       position: relative;
     }
@@ -337,7 +337,7 @@ ul{
   padding: 0px 30px;
   margin-top: 38px;
   border-top: 1px solid white;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   visibility: visible;
   }
