@@ -9,14 +9,14 @@ body {
     font-size: 15px; }
   body h3 {
     font-size: 35px;
-    margin: 15px 0 25px 0; }
+    margin: 15px 0 45px 0; }
   body .hero {
     width: 100vw;
     background: #1b1b1e;
     display: flex;
     min-height: 711px; }
     body .hero .container {
-      padding: 80px 80px 40px 80px; }
+      padding: 50px 80px 40px 80px; }
     body .hero .footer {
       bottom: 0;
       width: 100vw;
