@@ -291,4 +291,60 @@ ul{
   margin-left:45px;
 }
 
+.mob-title{
+  display: none;
+  margin-bottom: 11px;
+  margin-top: 38px;
+  font-size: 30px;
+}
+
+#label-mob{
+  display: none;
+}
+
+//Mobile version
+
+@media(max-width:940px){
+  body .hero .container {
+    padding: 30px;
+    padding-bottom: 45px;
+  }
+ .h1-desktop, .menu, #label{
+   display:none;
+ }
+ .pages > div {
+  margin-left: 0px;
+  }
+  body h3 {
+    font-size: 32px;
+    margin: 15px 0 8px 0;
+}
+  .mob-menu{
+    display: flex;
+  }
+  .pages > div {
+    margin-left: 0px;
+    display: flex !important;
+    visibility: visible;
+    width: 100%;
+    flex-direction: column;
+  }
+  .pages {
+    display: flex;
+    flex-direction: column;
+  }
+  .mob-title, .mob-nav{
+    display: block;
+  }
+  .skills{
+    flex-direction: column;
+  }
+  .skills ul{
+    margin-left: 0px !important;
+  }
+  #label-mob{
+    display: block;
+  }
+}
+
 
