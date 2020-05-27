@@ -239,6 +239,18 @@ ul {
 .mob-subtitle {
   font-size: 27px; }
 
+#label-mob:before {
+  content: '{';
+  position: absolute;
+  color: white;
+  margin-left: -48px; }
+
+#label-mob:after {
+  content: '}';
+  position: absolute;
+  margin-left: 24px;
+  color: white; }
+
 @media (max-width: 940px) {
   body .hero .container {
     padding: 30px 0px 45px 0px; }
@@ -247,7 +259,7 @@ ul {
   .pages > div {
     margin-left: 0px;
     width: auto;
-    padding: 0px 25px;
+    padding: 0px 30px;
     margin-top: 38px;
     border-top: 1px solid white;
     display: flex;

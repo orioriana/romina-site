@@ -307,6 +307,21 @@ ul{
   font-size: 27px;
 }
 
+#label-mob{
+  &:before{
+    content: '{';
+    position: absolute;
+    color: white;
+    margin-left: -48px;
+  }
+  &:after{
+    content: '}';
+    position: absolute;
+    margin-left: 24px;
+    color: white;
+  }
+}
+
 //Mobile version
 
 @media(max-width:940px){
@@ -319,7 +334,7 @@ ul{
  .pages > div {
   margin-left: 0px;
   width:auto;
-  padding: 0px 25px;
+  padding: 0px 30px;
   margin-top: 38px;
   border-top: 1px solid white;
   display: flex;
