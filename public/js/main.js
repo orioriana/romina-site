@@ -27,21 +27,18 @@ $('.menu > ul, li').off('click').on('click', function(e){
   }
 })
 
-const experiencePage1 = $('#experience-page1')
-const experiencePage2 = $('#experience-page2')
-const experiencePastSection = $(".present-section")
-const experiencePresentSection =  $(".past-section")
-
 $('#next').on('click', function(e){
   e.stopPropagation()
-  toggleVisibility(experiencePage1, experiencePage2)
+  $('#experience-page1').removeClass('display-content').css('display', 'flex').css('display', 'none');
+  $('#experience-page2').addClass('display-content').css('display', 'flex');
   $('#previous').css('display', 'block');
   $('#next').css('display', 'none');
 
 })
 $('#previous').on('click', function(e){
   e.stopPropagation()
-  toggleVisibility(experiencePage2, experiencePage1)
+  $('#experience-page2').removeClass('display-content').css('display', 'none');
+  $('#experience-page1').addClass('display-content').css('display', 'flex');
   $('#previous').css('display', 'none');
   $('#next').css('display', 'block');
 })
@@ -50,17 +47,15 @@ $('#present').on('click', function(e){
   e.stopPropagation()
   $(this).removeClass('grey').addClass('green');
   $("#past").removeClass('green').addClass('grey');
-  toggleVisibility(experiencePastSection, experiencePresentSection)
+  $(".present-section").addClass('display-content').css('display', 'block');
+  $('.past-section').removeClass('display-content').css('display', 'none');
 })
 
 $('#past').on('click', function(e){
   e.stopPropagation()
   $(this).removeClass('grey').addClass('green');
   $("#present").removeClass('green').addClass('grey');
-  toggleVisibility(experiencePresentSection, experiencePastSection)
+  $(".past-section").addClass('display-content').css('display', 'block');
+  $('.present-section').removeClass('display-content').css('display', 'none');
 })
 
-const toggleVisibility = ( hide, show ) => {
-  hide.removeClass('display-content').css('display', 'none');
-  show.addClass('display-content').css('display', 'flex');
-}
