@@ -1,4 +1,4 @@
-$('.menu > ul, li').off('click').on('click', function(e){
+$('.menu-li').on('click', function(e){
   e.stopPropagation()
   $('#const').addClass('constHide')
   $('h1 > .green').addClass('menuMove')
@@ -12,17 +12,20 @@ $('.menu > ul, li').off('click').on('click', function(e){
       el.classList.remove('white')
     }
   })
-  $('.pages > div').removeClass('display-content').css('display', 'none');
   if(this.id == 'about'){
+    $('.pages > div').removeClass('display-content').css('display', 'none');
     $('#about-content').addClass('display-content').css('display', 'block');
   }
   if(this.id == 'skills'){
+    $('.pages > div').removeClass('display-content').css('display', 'none');
     $('#skills-content').addClass('display-content').css('display', 'flex');
   }
   if(this.id == 'work'){
+    $('.pages > div').removeClass('display-content').css('display', 'none');
     $('#work-content').addClass('display-content').css('display', 'flex');
   }
   if(this.id == 'contact'){
+    $('.pages > div').removeClass('display-content').css('display', 'none');
     $('#contact-content').addClass('display-content').css('display', 'flex');
   }
 })
